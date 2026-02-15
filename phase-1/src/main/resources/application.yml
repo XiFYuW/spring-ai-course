@@ -1,0 +1,12 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-bett9g7eHEYb*************dQe0CMsxjqj
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-3-haiku-20240307
+  server:
+    port: 8080
+    netty:
+      connection-timeout: 2s
