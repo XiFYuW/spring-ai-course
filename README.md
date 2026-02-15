@@ -24,9 +24,6 @@
 ```
 spring-ai-course/
 ├── phase-1/          # Spring AI 入门实战
-│   ├── src/
-│   ├── pom.xml
-│   └── README.md
 └── README.md         # 本文件
 ```
 
