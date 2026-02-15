@@ -1,8 +1,6 @@
 # Spring AI 实战：手把手教你构建智能对话助手（支持流式输出）
 
-> 备选标题：
-> - Spring AI + Claude 快速入门：打造你的第一个 AI 聊天应用
-> - 响应式 AI 对话系统：Spring Boot 整合 Spring AI 完整指南
+> 📦 **项目源码**：[https://github.com/XiFYuW/spring-ai-course/tree/main/phase-1](https://github.com/XiFYuW/spring-ai-course/tree/main/phase-1)
 
 ## 引言
 
