@@ -1064,7 +1064,6 @@ curl -X POST http://localhost:8080/api/chat/sessions \
 {"sessionId": 1}
 ```
 
-[建议：此处插入 Postman 创建会话的截图]
 
 #### 步骤2：非流式聊天
 
@@ -1097,8 +1096,6 @@ curl -X POST http://localhost:8080/api/chat/stream \
 ```
 当当然！以下是一...
 ```
-
-[建议：此处插入流式输出的 GIF 动图，展示逐字输出效果]
 
 #### 步骤4：多轮对话测试
 
