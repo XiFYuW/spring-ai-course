@@ -32,6 +32,7 @@ spring-ai-course/
 | 阶段 | 内容 | 链接 |
 |------|------|------|
 | Phase 1 | Spring AI 入门：构建智能对话助手 | [查看教程](./phase-1/README.md) |
+| Phase 2 | Spring AI 进阶：多会话管理与上下文记忆 | [查看教程](./phase-2/README.md) |
 
 ## 环境要求
 

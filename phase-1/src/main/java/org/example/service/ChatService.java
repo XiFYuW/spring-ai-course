@@ -10,6 +10,7 @@ import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,9 @@ public class ChatService {
                 chatClient.prompt(prompt)
                         .call()
                         .content()
-        ).doOnNext(response -> {
+        )
+        .subscribeOn(Schedulers.boundedElastic())  // 在弹性线程池中执行阻塞操作
+        .doOnNext(response -> {
             if (response != null && !response.isEmpty()) {
                 conversationHistory.add(new AssistantMessage(response));
             }
