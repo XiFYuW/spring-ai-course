@@ -1,7 +1,7 @@
 spring:
   ai:
     openai:
-      api-key: sk-4w9xPMtW********KNtADiGOtrxK7RoX
+      api-key: sk-4w9xPMtW73r4yHjnZaqKxKUgXcIvwEbpKNtADiGOtrxK7RoX
       base-url: https://ai.32zi.com
       chat:
         options:
