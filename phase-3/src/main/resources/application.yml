@@ -1,0 +1,38 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-Kbtp2FBaVcdBjfKB0XSkqBFwhQm5rw4i2pafQkQ3JSV4thsl
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-haiku-4-5-20251001
+    retry:
+      max-attempts: 3
+      backoff:
+        initial-interval: 1000
+        multiplier: 2
+        max-interval: 10000
+  server:
+    port: 8080
+    netty:
+      connection-timeout: 2s
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/chatdb
+    username: postgres
+    password: root
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
+  sql:
+    init:
+      mode: always
+
+# 应用自定义配置
+app:
+  chat:
+    # 系统提示词 - 定义AI助手的行为准则
+    system-prompt: "你是一个友好、专业的AI助手，请用简洁清晰的语言回答用户的问题。"
+    # 最大保留的对话轮数（一对 = user + assistant）
+    # 20对 = 40条消息，加上系统消息共41条
+    max-context-pairs: 20

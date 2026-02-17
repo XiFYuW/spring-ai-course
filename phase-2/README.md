@@ -476,10 +476,10 @@ spring:
   ai:
     openai:
       api-key: ${OPENAI_API_KEY:your-api-key-here}
-      base-url: https://api.openai.com  # 或使用兼容 API
+      base-url: https://ai.32zi.com  # 或使用兼容 API
       chat:
         options:
-          model: gpt-3.5-turbo
+          model: claude-haiku-4-5-20251001
     retry:
       max-attempts: 3
       backoff:
