@@ -1,0 +1,18 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-qcEYMsOUftGBEoCx7cMzdFewPnAtcOdTxZDSX1Sm4dGUrOo4
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-3-7-sonnet-latest
+    retry:
+      max-attempts: 3
+      backoff:
+        initial-interval: 1000
+        multiplier: 2
+        max-interval: 10000
+  server:
+    port: 8080
+    netty:
+      connection-timeout: 2s
