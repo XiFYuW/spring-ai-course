@@ -35,6 +35,7 @@ spring-ai-course/
 | Phase 2 | Spring AI 进阶：多会话管理与上下文记忆 | [查看教程](./phase-2/README.md) |
 | Phase 3 | Spring AI 进阶：多会话管理与动态角色 | [查看教程](./phase-3/README.md) |
 | Phase 4 | Spring AI 结构化输出 | [查看教程](./phase-4/README.md) |
+| Phase 5 | Spring AI 构建图像理解应用 | [查看教程](./phase-5/README.md) |
 
 ## 环境要求
 
