@@ -122,7 +122,7 @@ spring-ai-mcp-demo/
 本项目使用 OpenAI 兼容的 API 服务，你可以：
 
 1. 使用 OpenAI 官方 API
-2. 使用第三方代理服务（如项目中配置的 `https://ai.32zi.com`）
+2. 使用第三方代理服务（如项目中配置的 `https://ai.32zi.com`）[点击访问](https://ai.32zi.com)
 
 **配置方式**：在 `application.yml` 中设置你的 API Key
 
