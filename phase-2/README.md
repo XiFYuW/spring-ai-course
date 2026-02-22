@@ -487,9 +487,6 @@ spring:
         multiplier: 2
         max-interval: 10000
   
-  server:
-    port: 8080
-  
   # R2DBC 数据库配置
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/chatdb
@@ -504,7 +501,10 @@ spring:
   sql:
     init:
       mode: always
-
+server:
+  port: 8080
+  netty:
+    connection-timeout: 2s
 # 自定义配置
 app:
   chat:

@@ -214,10 +214,10 @@ spring:
         options:
           # 指定使用的模型
           model: claude-3-haiku-20240307
-  server:
-    port: 8080
-    netty:
-      connection-timeout: 2s
+server:
+  port: 8080
+  netty:
+    connection-timeout: 2s
 ```
 
 > 💡 **小贴士**：`base-url` 可以替换为任何兼容 OpenAI API 格式的服务地址，如官方 OpenAI、Azure OpenAI、本地 Ollama 等。

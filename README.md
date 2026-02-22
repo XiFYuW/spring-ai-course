@@ -37,6 +37,7 @@ spring-ai-course/
 | Phase 4 | Spring AI 结构化输出 | [查看教程](./phase-4/README.md) |
 | Phase 5 | Spring AI 构建图像理解应用 | [查看教程](./phase-5/README.md) |
 | Phase 6 | Spring AI 工具调用 | [查看教程](./phase-6/README.md) |
+| Phase 7 | Spring AI MCP 之 SSE WebFlux | [查看教程](./phase-7/README.md) |
 
 ## 环境要求
 

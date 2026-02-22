@@ -287,10 +287,10 @@ spring:
         initial-interval: 1000
         multiplier: 2
         max-interval: 10000
-  server:
-    port: 8080
-    netty:
-      connection-timeout: 60s
+server:
+  port: 8080
+  netty:
+    connection-timeout: 60s
 ```
 
 **配置要点**：

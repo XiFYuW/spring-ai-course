@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: mcp-weather-server
+  http:
+    codecs:
+      max-in-memory-size: 10MB
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: webflux-mcp-server
+        version: 1.0.0
+        type: ASYNC
+        instructions: "This reactive server provides weather information tools and resources"
+        annotation-scanner:
+          enabled: true
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+        sse-message-endpoint: /mcp/messages
+        keep-alive-interval: 30s
+
+server:
+  port: 8080
+  netty:
+    connection-timeout: 60s
+
+# 日志配置
+logging:
+  level:
+    io.modelcontextprotocol: DEBUG
+    org.example.server: DEBUG
+    org.springframework.ai.mcp: DEBUG
