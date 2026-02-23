@@ -19,13 +19,6 @@
 
 🔗 **官网地址**: [https://ai.32zi.com/](https://ai.32zi.com/)
 
-## 项目结构
-
-```
-spring-ai-course/
-├── phase-1/          # Spring AI 入门实战
-└── README.md         # 本文件
-```
 
 ## 教程目录
 
@@ -38,6 +31,7 @@ spring-ai-course/
 | Phase 5 | Spring AI 构建图像理解应用 | [查看教程](./phase-5/README.md) |
 | Phase 6 | Spring AI 工具调用 | [查看教程](./phase-6/README.md) |
 | Phase 7 | Spring AI MCP 之 SSE WebFlux | [查看教程](./phase-7/README.md) |
+| Phase 8 | Spring AI Streamable HTTP MCP | [查看教程](./phase-8/README.md) |
 
 ## 环境要求
 
