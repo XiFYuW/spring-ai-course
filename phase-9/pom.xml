@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <name>Spring AI MCP Demo</name>
-    <description>MCP</description>
+    <description>MCP 客户端和服务器分离示例</description>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>

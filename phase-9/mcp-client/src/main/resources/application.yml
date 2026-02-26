@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: user-client
+  http:
+    codecs:
+      max-in-memory-size: 10MB
+  ai:
+    openai:
+      api-key: sk-BNW4JuILMNmBCPw3bEktk1ZvWenZhyYbKoIcdv04kSofNSz5
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-3-7-sonnet-latest
+    retry:
+      max-attempts: 5
+      backoff:
+        initial-interval: 2000
+        multiplier: 2
+        max-interval: 60000
+    # MCP 客户端配置
+    mcp:
+      client:
+        name: user-client
+        version: 1.0.0
+        enabled: true
+        type: ASYNC
+        request-timeout: 30s
+        annotation-scanner:
+          enabled: true
+        streamable-http: # 可流式传输的 HTTP
+          connections:
+            user-server:
+              url: http://localhost:8080
+              endpoint: /api/mcp
+
+server:
+  port: 8081
+
+# 日志配置
+logging:
+  level:
+    io.modelcontextprotocol: DEBUG
+    org.example.client: DEBUG
+    org.springframework.ai.mcp: DEBUG

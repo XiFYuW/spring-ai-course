@@ -32,6 +32,7 @@
 | Phase 6 | Spring AI 工具调用 | [查看教程](./phase-6/README.md) |
 | Phase 7 | Spring AI MCP 之 SSE WebFlux | [查看教程](./phase-7/README.md) |
 | Phase 8 | Spring AI Streamable HTTP MCP | [查看教程](./phase-8/README.md) |
+| Phase 9 | Spring AI MCP 无状态服务器 | [查看教程](./phase-9/README.md) |
 
 ## 环境要求
 
