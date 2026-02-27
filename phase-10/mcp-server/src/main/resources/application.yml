@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: mcp-product-server
+  http:
+    codecs:
+      max-in-memory-size: 10MB
+  ai:
+    mcp:
+      server:
+        protocol: STREAMABLE #可流式传输的 HTTP MCP 服务
+        enabled: true
+        name: webflux-mcp-server
+        version: 1.0.0
+        type: ASYNC
+        instructions: "This reactive server provides product management tools and resources"
+        annotation-scanner:
+          enabled: true
+        capabilities:
+          tool: true
+          resource: true
+          prompt: true
+          completion: true
+        resource-change-notification: true
+        tool-change-notification: true
+        prompt-change-notification: true
+        streamable-http:
+          mcp-endpoint: /api/mcp
+          keep-alive-interval: 30s
+          disallow-delete: true # 禁用 DELETE 请求
+
+  # R2DBC PostgreSQL 数据库配置
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/chatdb
+    username: postgres
+    password: root
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
+  sql:
+    init:
+      mode: always
+      
+server:
+  port: 8080
+  netty:
+    connection-timeout: 60s
+
+# 日志配置
+logging:
+  level:
+    io.modelcontextprotocol: DEBUG
+    org.example.server: DEBUG
+    org.springframework.ai.mcp: DEBUG
+    org.springframework.r2dbc: DEBUG
