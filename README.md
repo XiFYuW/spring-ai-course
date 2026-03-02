@@ -34,6 +34,7 @@
 | Phase 8 | Spring AI Streamable HTTP MCP | [查看教程](./phase-8/README.md) |
 | Phase 9 | Spring AI MCP 无状态服务器 | [查看教程](./phase-9/README.md) |
 | Phase 10 | Spring AI 将你的服务升级为 AI 可调用的智能工具 | [查看教程](./phase-10/README.md) |
+| Phase 11 | Spring AI + Elasticsearch 向量存储实战 | [查看教程](./phase-11/README.md) |
 
 ## 环境要求
 
