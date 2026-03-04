@@ -1,0 +1,35 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-IvGnDdWa5dEjhkOc384Yw3a0I7Vl9YfpMPDcxe6vfQ0CSvA6
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-haiku-4-5-20251001
+    vectorstore:
+      redis:
+        # 是否初始化所需的模式
+        initialize-schema: true
+        # 存储向量的索引名称
+        index-name: spring-ai-index
+        # Redis键的前缀
+        prefix: embedding
+  data:
+    redis:
+      # Redis服务器地址
+      host: 127.0.0.1
+      # Redis服务器端口
+      port: 6666
+      # Redis用户名（如果有）
+      # username: default
+      # Redis密码（如果有）
+      password: L4m1G2^1LfRe8G^rDB~
+      # 连接超时时间
+      timeout: 10s
+      # 数据库索引
+      database: 5
+
+server:
+  port: 8080
+  netty:
+    connection-timeout: 2s

@@ -35,6 +35,7 @@
 | Phase 9 | Spring AI MCP 无状态服务器 | [查看教程](./phase-9/README.md) |
 | Phase 10 | Spring AI 将你的服务升级为 AI 可调用的智能工具 | [查看教程](./phase-10/README.md) |
 | Phase 11 | Spring AI + Elasticsearch 向量存储实战 | [查看教程](./phase-11/README.md) |
+| Phase 12 | Spring AI + Redis 向量存储实战 | [查看教程](./phase-12/README.md) |
 
 ## 环境要求
 
