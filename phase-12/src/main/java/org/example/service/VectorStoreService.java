@@ -16,7 +16,7 @@ import java.util.Map;
  * 向量存储服务类
  * 
  * 提供文档的添加、搜索、删除等操作
- * 基于 Elasticsearch 向量存储实现
+ * 基于 Redis 向量存储实现
  */
 @Service
 public class VectorStoreService {

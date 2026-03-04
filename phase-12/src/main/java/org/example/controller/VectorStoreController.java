@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * 向量存储 REST API 控制器
  * 
- * 提供文档的增删改查接口，基于 Elasticsearch 向量存储
+ * 提供文档的增删改查接口，基于 Redis 向量存储
  */
 @RestController
 @RequestMapping("/api/vector-store")
