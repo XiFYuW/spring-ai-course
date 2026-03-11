@@ -1,0 +1,38 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-IvGnDdWa5dEjhkOc384Yw3a0I7Vl9YfpMPDcxe6vfQ0CSvA6
+      base-url: https://ai.32zi.com
+      chat:
+        options:
+          model: claude-haiku-4-5-20251001
+    vectorstore:
+      elasticsearch:
+        # 是否初始化所需的模式（索引）
+        initialize-schema: true
+        # 存储向量的索引名称
+        index-name: spring-ai-document-index
+        # 向量的维数（根据使用的Embedding模型调整，OpenAI text-embedding-ada-002 是 1536）
+        dimensions: 1536
+        # 相似性函数：cosine（默认）、l2_norm、dot_product
+        similarity: cosine
+        # 向量字段名称
+        embedding-field-name: embedding
+  elasticsearch:
+    # Elasticsearch 实例地址，多个用逗号分隔
+    uris: http://localhost:5600
+    # 用户名（如果启用了安全认证）
+    # username: elastic
+    # 密码（如果启用了安全认证）- 请替换为实际密码
+    #password: MaYA5JP0=i5Bs5j*kGTp
+    # 连接超时时间
+    connection-timeout: 10s
+    # Socket 超时时间
+    socket-timeout: 30s
+    # 是否启用 socket keep alive
+    socket-keep-alive: true
+
+server:
+  port: 8080
+  netty:
+    connection-timeout: 2s

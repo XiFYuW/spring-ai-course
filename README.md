@@ -37,7 +37,7 @@
 | Phase 11 | Spring AI + Elasticsearch 向量存储实战 | [查看教程](./phase-11/README.md) |
 | Phase 12 | Spring AI + Redis 向量存储实战 | [查看教程](./phase-12/README.md) |
 | Phase 13 | Spring AI 实战：TXT 文件上传 + 智能文本切割 + 向量数据库存储 | [查看教程](./phase-13/README.md) |
-
+| Phase 14 | 揭秘 Spring AI 文档切割：从"暴力分割"到"语义智能"的进阶之路 | [查看教程](./phase-14/README.md) |
 ## 环境要求
 
 - JDK 17+
